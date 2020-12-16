@@ -170,8 +170,8 @@ int main(void)
     if (uiKeyMinusTime && uiNow > uiKeyMinusTime + uiKeyPlusMinusDelay) {
       uiKeyMinusTime = uiNow;
       iPercent -= 10;
-      if (iPercent < 0) {
-        iPercent = 0;
+      if (iPercent < 10) {
+        iPercent = 10;
       }
     }
 
